@@ -8,7 +8,7 @@ namespace DevCard_MVC.ViewComponents
         public IViewComponentResult Invoke()
         {
             var latestArticles = LatestArticle.GetLatestArticles();
-            return View("_LatestArticels",latestArticles);
+            return View("_LatestArticles",latestArticles);
         }
     }
 }
