@@ -23,7 +23,6 @@ D:\repos\C#\DevCard\DevCard_MVC\obj\Debug\net5.0\DevCard_MVC.TagHelpers.input.ca
 D:\repos\C#\DevCard\DevCard_MVC\obj\Debug\net5.0\DevCard_MVC.TagHelpers.output.cache
 D:\repos\C#\DevCard\DevCard_MVC\obj\Debug\net5.0\DevCard_MVC.RazorCoreGenerate.cache
 D:\repos\C#\DevCard\DevCard_MVC\obj\Debug\net5.0\Razor\Views\Home\Index.cshtml.g.cs
-D:\repos\C#\DevCard\DevCard_MVC\obj\Debug\net5.0\Razor\Views\Home\Privacy.cshtml.g.cs
 D:\repos\C#\DevCard\DevCard_MVC\obj\Debug\net5.0\Razor\Views\Shared\Error.cshtml.g.cs
 D:\repos\C#\DevCard\DevCard_MVC\obj\Debug\net5.0\Razor\Views\Shared\_Layout.cshtml.g.cs
 D:\repos\C#\DevCard\DevCard_MVC\obj\Debug\net5.0\Razor\Views\Shared\_ValidationScriptsPartial.cshtml.g.cs
@@ -37,3 +36,4 @@ D:\repos\C#\DevCard\DevCard_MVC\obj\Debug\net5.0\ref\DevCard_MVC.dll
 D:\repos\C#\DevCard\DevCard_MVC\obj\Debug\net5.0\DevCard_MVC.pdb
 D:\repos\C#\DevCard\DevCard_MVC\obj\Debug\net5.0\DevCard_MVC.genruntimeconfig.cache
 D:\repos\C#\DevCard\DevCard_MVC\obj\Debug\net5.0\DevCard_MVC.csproj.CopyComplete
+D:\repos\C#\DevCard\DevCard_MVC\obj\Debug\net5.0\Razor\Views\Home\Contact.cshtml.g.cs
