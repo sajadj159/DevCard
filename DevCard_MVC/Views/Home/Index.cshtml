@@ -34,7 +34,8 @@
         </div>
     </div>
 </section>
-@await Html.PartialAsync("Projects")
+
+@await Component.InvokeAsync("Projects")
 
 <div class="container">
     <hr>
