@@ -1,5 +1,4 @@
-﻿using System.Collections.Generic;
-using System.ComponentModel.DataAnnotations;
+﻿using System.ComponentModel.DataAnnotations;
 
 namespace DevCard_MVC.Models
 {
@@ -11,7 +10,7 @@ namespace DevCard_MVC.Models
         public string Name { get; set; }
 
         [Required(ErrorMessage = "این فیلد اجباریست")]
-        [EmailAddress(ErrorMessage = "به درستی وارد نشده است")]
+        [EmailAddress(ErrorMessage = "ایمیل به درستی وارد نشده است")]
         public string Email { get; set; }
 
         public string Message { get; set; }

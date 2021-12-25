@@ -1,5 +1,4 @@
-﻿using System;
-using DevCard_MVC.Models;
+﻿using DevCard_MVC.Models;
 using Microsoft.AspNetCore.Mvc;
 using System.Diagnostics;
 
@@ -22,9 +21,14 @@ namespace DevCard_MVC.Controllers
         [HttpPost]
         public IActionResult Contact(Contact form)
         {
-            
-            Console.WriteLine(form);
-            return Json(Ok());
+            if (ModelState.IsValid==false)
+            {
+                ViewBag.errore = "اطلاعات وارد شده صحیح نمی باشد. لطفا دوباره تلاش کنید";
+                return View(form);
+            }
+
+            ViewBag.success = "پیغام شما با موفقیت ثبت شد :)";
+            return View();
         }
 
         [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]
