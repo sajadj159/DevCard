@@ -1,0 +1,11 @@
+{
+  "Version": 1,
+  "ProjectMap": {
+    "e20aec63-1575-4db6-90dc-bc4155a1daae": {
+      "ProjectGuid": "e20aec63-1575-4db6-90dc-bc4155a1daae",
+      "DisplayName": "DevCard_MVC",
+      "ColorIndex": 0
+    }
+  },
+  "NextColorIndex": 1
+}
