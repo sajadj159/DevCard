@@ -15,51 +15,44 @@
             <ul class="list-inline mb-0">
                 <li class="list-inline-item mb-3">
                     <a class="twitter" href="#">
-                        <i
-                            class="fab fa-twitter fa-fw fa-lg">
+                        <i class="fab fa-twitter fa-fw fa-lg">
                         </i>
                     </a>
                 </li>
 
                 <li class="list-inline-item mb-3">
                     <a class="linkedin" href="#">
-                        <i
-                            class="fab fa-linkedin-in fa-fw fa-lg">
+                        <i class="fab fa-linkedin-in fa-fw fa-lg">
                         </i>
                     </a>
                 </li>
                 <li class="list-inline-item mb-3">
                     <a class="github" href="#">
-                        <i
-                            class="fab fa-github-alt fa-fw fa-lg">
+                        <i class="fab fa-github-alt fa-fw fa-lg">
                         </i>
                     </a>
                 </li>
                 <li class="list-inline-item">
                     <a class="instagram" href="#">
-                        <i
-                            class="fab fa-instagram fa-fw fa-lg">
+                        <i class="fab fa-instagram fa-fw fa-lg">
                         </i>
                     </a>
                 </li>
                 <li class="list-inline-item mb-3">
                     <a class="stack-overflow" href="#">
-                        <i
-                            class="fab fa-stack-overflow fa-fw fa-lg">
+                        <i class="fab fa-stack-overflow fa-fw fa-lg">
                         </i>
                     </a>
                 </li>
                 <li class="list-inline-item mb-3">
                     <a class="medium" href="#">
-                        <i
-                            class="fab fa-medium-m fa-fw fa-lg">
+                        <i class="fab fa-medium-m fa-fw fa-lg">
                         </i>
                     </a>
                 </li>
                 <li class="list-inline-item mb-3">
                     <a class="codepen" href="#">
-                        <i
-                            class="fab fa-codepen fa-fw fa-lg">
+                        <i class="fab fa-codepen fa-fw fa-lg">
                         </i>
                     </a>
                 </li>
@@ -69,19 +62,19 @@
 </section>
 <section class="contact-section px-3 py-5 p-md-5">
     <div class="container">
-        @if (string.IsNullOrWhiteSpace(ViewBag.success)==false)
+        @if (string.IsNullOrWhiteSpace(ViewBag.success) == false)
         {
             <div class="alert-success p-1">
                 <p>@ViewBag.success</p>
             </div>
         }
-        @if (string.IsNullOrWhiteSpace(ViewBag.errore)==false)
+        @if (string.IsNullOrWhiteSpace(ViewBag.errore) == false)
         {
-            <div class="alert-danger p-1" >
+            <div class="alert-danger p-1">
                 <p>@ViewBag.errore</p>
             </div>
         }
-        
+
         <form id="contact-form" class="contact-form col-lg-8 mx-lg-auto" method="post" asp-action="Contact">
             <h3 class="text-center mb-3">در دسترس باشید!</h3>
             <div class="form-row">
@@ -97,15 +90,15 @@
                 </div>
 
                 <div class="form-group col-12">
-                    <select asp-for="Service" class="custom-select" asp-items="Model.">
+                    <select asp-for="Service" class="custom-select" asp-items="Model.Services">
                         <option value="0" selected="selected">سرویس مورد نظر خود را انتخاب کنید...</option>
-                       
+
                     </select>
                 </div>
                 <div class="form-group col-12">
                     <label class="sr-only" asp-for="Message">پیغام شما</label>
                     <textarea class="form-control" asp-for="Message"
-								placeholder="پیغام خود را وارد نمایید ..." rows="10" ></textarea>
+                              placeholder="پیغام خود را وارد نمایید ..." rows="10"></textarea>
                 </div>
                 <div class="form-group col-12">
                     <button type="submit" class="btn btn-block btn-primary py-2">ارسال</button>
