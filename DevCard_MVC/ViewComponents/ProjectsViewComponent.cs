@@ -1,4 +1,5 @@
-﻿using DevCard_MVC.Models;
+﻿using DevCard_MVC.Data;
+using DevCard_MVC.Models;
 using Microsoft.AspNetCore.Mvc;
 
 namespace DevCard_MVC.ViewComponents
@@ -7,8 +8,9 @@ namespace DevCard_MVC.ViewComponents
     {
         public IViewComponentResult Invoke()
         {
-            var projects = Project.GetProjects();
+            var projects = ProjectStore.GetProjects();
             return View("_Projects",projects);
         }
+
     }
 }

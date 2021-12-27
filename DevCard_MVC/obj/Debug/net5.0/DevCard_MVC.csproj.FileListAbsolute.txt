@@ -117,3 +117,4 @@ D:\repos\C#\DevCard\DevCard_MVC\obj\Debug\net5.0\Razor\Views\Home\Components\Pro
 D:\repos\C#\DevCard\DevCard_MVC\obj\Debug\net5.0\Razor\Views\Home\Components\LatestArticles\_LatestArticles.cshtml.g.cs
 D:\repos\C#\DevCard\DevCard_MVC\obj\Debug\net5.0\Razor\Views\Shared\Header.cshtml.g.cs
 D:\repos\C#\DevCard\DevCard_MVC\obj\Debug\net5.0\Razor\Views\Shared\Footer.cshtml.g.cs
+D:\repos\C#\DevCard\DevCard_MVC\obj\Debug\net5.0\Razor\Views\Home\ProjectDetail.cshtml.g.cs

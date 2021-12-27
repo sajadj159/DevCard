@@ -1,6 +1,7 @@
 ﻿using DevCard_MVC.Models;
 using Microsoft.AspNetCore.Mvc;
 using System.Diagnostics;
+using DevCard_MVC.Data;
 using Microsoft.AspNetCore.Mvc.Rendering;
 
 namespace DevCard_MVC.Controllers
@@ -43,10 +44,16 @@ namespace DevCard_MVC.Controllers
             return View(form);
         }
 
+        public IActionResult ProjectDetail(long id)
+        {
+            var project = ProjectStore.GetProjectBy(id);
+            return View(project);
+        }
+
         [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]
         public IActionResult Error()
         {
-            return View(new ErrorViewModel { RequestId = Activity.Current?.Id ?? HttpContext.TraceIdentifier });
+            return View(new ErrorViewModel {RequestId = Activity.Current?.Id ?? HttpContext.TraceIdentifier});
         }
     }
 }

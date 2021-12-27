@@ -14,12 +14,12 @@
                             <div class="col-lg-8">
                                 <div class="card-body">
                                     <h5 class="card-title">
-                                        <a href="project.html" class="theme-link">
-                                          @project.Id:  @project.Name
+                                        <a asp-controller="Home" asp-action="ProjectDetail" asp-route-id="@project.Id" class="theme-link">
+                                            @project.Id:  @project.Name
                                         </a>
                                     </h5>
                                     <p class="card-text">
-                                       @project.Description
+                                        @project.Description
                                     </p>
                                     <p class="card-text">
                                         <small class="text-muted">سفارش دهنده: @project.Client</small>
@@ -31,7 +31,7 @@
                 </div>
 
             }
-           
+
         </div>
     </div>
 </section>
