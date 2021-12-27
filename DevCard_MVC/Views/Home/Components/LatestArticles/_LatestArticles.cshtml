@@ -11,7 +11,7 @@
                         <img class="card-img-top" src="assets/images/blog/@article.Image" alt="@article.Description" title="@article.Title">
                         <div class="card-body">
                             <h5 class="card-title">
-                                <a class="theme-link" href="blog-post.html">
+                                <a asp-controller="Home" asp-action="LatestArticleDetail" asp-route-id="@article.Id">
                                  @article.Id:  @article.Title
                                 </a>
                             </h5>
@@ -19,7 +19,7 @@
                                @article.Description
                             </p>
                             <p class="mb-0">
-                                <a class="more-link" href="blog-post.html">ادامه مطلب</a>
+                                <a class="more-link" asp-controller="Home" asp-action="LatestArticleDetail" asp-route-id="@article.Id">ادامه مطلب</a>
                             </p>
 
                         </div>

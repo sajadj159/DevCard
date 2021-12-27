@@ -50,6 +50,12 @@ namespace DevCard_MVC.Controllers
             return View(project);
         }
 
+        public IActionResult LatestArticleDetail(long id)
+        {
+            var latestArticle = LatestArticleStore.GetLatestArticleBy(id);
+            return View(latestArticle);
+        }
+
         [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]
         public IActionResult Error()
         {
